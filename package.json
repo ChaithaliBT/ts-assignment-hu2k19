@@ -1,0 +1,21 @@
+{
+  "name": "typescript-allocations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && jasmine dist/**/*.spec.js",
+    "dev": "tsc --watch | nodemon --inspect ./dist/index.js --watch dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.8",
+    "@types/node": "^10.12.24",
+    "jasmine": "^3.3.1",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "nodemon": "^1.18.10",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
