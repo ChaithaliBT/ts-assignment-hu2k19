@@ -8,6 +8,3 @@ export default interface AllocationManager {
     getFreeDevelopersForTechnology(technology: Technology): Developer[];
     allocateDeveloperToProjectForTechnology(developer: Developer, project: Project, technology: Technology): void;
 }
-
-
-

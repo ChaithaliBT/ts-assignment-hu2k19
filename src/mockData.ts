@@ -1,24 +1,26 @@
+import Technology from './Technology';
+
 const MOCK_DATA = {
     DEVELOPERS: [
         {
             id: 1,
             name: 'Kick Buttowski',
-            knownTechnologies: ['java', 'python', 'javascript'],
+            knownTechnologies: [Technology.JAVA, Technology.PYTHON, Technology.JAVASCRIPT],
         },
         {
             id: 2,
             name: 'Courage C.D',
-            knownTechnologies: ['python'],
+            knownTechnologies: [Technology.PYTHON],
         },
     ],
     PROJECTS: [
         {
             id: 1,
-            requiredTechnologies: ['java']
+            requiredTechnologies: [Technology.JAVA]
         },
         {
             id: 2,
-            requiredTechnologies: ['python', 'javascript']
+            requiredTechnologies: [Technology.PYTHON, Technology.JAVASCRIPT]
         }
     ]
 };
