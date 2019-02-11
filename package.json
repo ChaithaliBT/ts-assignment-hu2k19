@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "tsc && jasmine dist/**/*.spec.js",
-    "dev": "tsc --watch | nodemon --inspect ./dist/index.js --watch dist"
+    "dev": "tsc --watch | nodemon --inspect ./dist/src/index.js --watch dist"
   },
   "author": "",
   "license": "ISC",

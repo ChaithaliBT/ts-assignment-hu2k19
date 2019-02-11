@@ -1,8 +1,8 @@
-import Allocation from './Allocation';
 import AllocationManager from './AllocationManager';
-import Developer from './Developer';
+import Allocation from './models/Allocation';
+import Developer from './models/Developer';
+import Project from './models/Project';
 import ModelStore from './ModelStore';
-import Project from './Project';
 import Technology from './Technology';
 
 export default class AllocationManagerImpl implements AllocationManager {

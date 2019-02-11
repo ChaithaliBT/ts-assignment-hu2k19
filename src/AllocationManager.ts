@@ -1,5 +1,5 @@
-import Developer from './Developer';
-import Project from './Project';
+import Developer from './models/Developer';
+import Project from './models/Project';
 import Technology from './Technology';
 
 export default interface AllocationManager {

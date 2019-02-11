@@ -1,8 +1,8 @@
-import Allocation from '../src/Allocation';
 import AllocationManagerImpl from '../src/AllocationManagerImpl';
 import ArrayModelStore from '../src/ArrayModelStore';
-import Developer from '../src/Developer';
-import Project from '../src/Project';
+import Allocation from '../src/models/Allocation';
+import Developer from '../src/models/Developer';
+import Project from '../src/models/Project';
 import Technology from '../src/Technology';
 
 describe('AllocationManagerImpl', function () {
