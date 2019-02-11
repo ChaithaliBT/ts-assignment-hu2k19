@@ -1,8 +1,13 @@
-import { DeveloperStore } from './DeveloperStore';
+import Developer from './Developer';
+import Project from './Project';
+import Technology from './Technology';
 
-
-class AllocationManager {
-    private developerStore: DeveloperStore;
-    private projectStore: ProjectStore;
-
+export default interface AllocationManager {
+    getAllocatedDeveloperTechnologiesForProject(projectId: number): { developerId: number, technology: Technology }[];
+    getUnfulfilledRequirementsForProject(projectId: number): Technology[];
+    getFreeDevelopersForTechnology(technology: Technology): Developer[];
+    allocateDeveloperToProjectForTechnology(developer: Developer, project: Project, technology: Technology): void;
 }
+
+
+

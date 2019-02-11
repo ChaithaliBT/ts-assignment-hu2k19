@@ -1,4 +1,7 @@
-class Project extends Model {
+import Model from './Model';
+import Technology from './Technology';
+
+export default class Project extends Model {
     name: string;
-    requiredTechnologies: string[];
+    requiredTechnologies: Technology[];
 }

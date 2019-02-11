@@ -1,5 +1,9 @@
-export interface ModelStore<M extends Model> {
+import Model from './Model';
+
+export default interface ModelStore<M extends Model> {
     getById(id: number): M;
+
+    all(): M[];
 
     filter(predicate: (obj: M) => boolean): M[];
 

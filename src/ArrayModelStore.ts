@@ -1,10 +1,19 @@
-import { ModelStore } from './ModelStore';
+import Model from './Model';
+import ModelStore from './ModelStore';
 
-export class ArrayModelStore<M extends Model> implements ModelStore<M> {
+export default class ArrayModelStore<M extends Model> implements ModelStore<M> {
     private data: M[];
+
+    constructor() {
+        this.data = new Array<M>();
+    }
 
     getById(id: number): M {
         return this.filter(m => m.id === id)[0];
+    }
+
+    all(): M[] {
+        return this.data;
     }
 
     filter(predicate: (obj: M) => boolean): M[] {
